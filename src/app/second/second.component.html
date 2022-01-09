@@ -1,0 +1,13 @@
+<p>second works!</p>
+
+<p>id: {{ id }}</p>
+<p>idMap: {{ idMap }}</p>
+
+<nav>
+  <ul>
+    <li><a routerLink="child-c">Child C component</a></li>
+    <li><a [routerLink]="['child-c', 10]">Child C component / 10 </a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

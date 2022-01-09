@@ -1,0 +1,33 @@
+<hello name="{{ name }}"></hello>
+
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/first-component" routerLinkActive="active"
+        >First Component</a
+      >
+    </li>
+    <li>
+      <a routerLink="/second-component" routerLinkActive="active"
+        >Second Component</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="['/second-component', 10]" routerLinkActive="active"
+        >Second Component / 10</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['/second-component']"
+        [queryParams]="{ id: 10 }"
+        routerLinkActive="active"
+        >Second Component?id=10</a
+      >
+    </li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>

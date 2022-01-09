@@ -1,0 +1,14 @@
+<p>first works! Param "Name": {{ name }}</p>
+
+<nav>
+  <ul>
+    <li><a routerLink="child-a">Child A</a></li>
+    <li><a routerLink="child-b">Child B</a></li>
+    <li><a routerLink="../second-component">Second Component</a></li>
+  </ul>
+</nav>
+
+<button (click)="navigateSecondComponent()">
+  Second Component with Params
+</button>
+<router-outlet></router-outlet>
