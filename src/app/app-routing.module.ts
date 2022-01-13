@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 import { ChildCComponent } from './child-c/child-c.component';
+import { ThirdComponent } from './third/third.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,8 @@ const routes: Routes = [
     ],
   },
   { path: 'second-component', component: SecondComponent },
+
+  { path: 'third-component', component: ThirdComponent },
 
   {
     path: 'second-component/:id',

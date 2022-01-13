@@ -27,6 +27,21 @@
         >Second Component?id=10</a
       >
     </li>
+
+    <li>
+      <a routerLink="/third-component" routerLinkActive="active"
+        >Third Component Plain</a
+      >
+    </li>
+
+    <li>
+      <a
+        [routerLink]="['/third-component']"
+        [queryParams]="{ id: 10 }"
+        routerLinkActive="active"
+        >Third Component?id=10</a
+      >
+    </li>
   </ul>
 </nav>
 <!-- The routed views render in the <router-outlet>-->
